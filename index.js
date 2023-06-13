@@ -8,6 +8,7 @@ const { cityRouter } = require("./routes/Car.route");
 
 let app = express();
 require("dotenv").config();
+
 app.use(
   cors({
     origin: "*",

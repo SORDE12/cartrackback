@@ -14,6 +14,7 @@ cityRouter.get("/dashboard", async (req, res) => {
 });
 
 cityRouter.post("/addcity", async (req, res) => {
+  
   const payload = req.body;
   try {
     const newcar = new CityModal(payload);
