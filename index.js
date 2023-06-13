@@ -34,7 +34,7 @@ app.post("/addcity", async (req, res) => {
   
   const payload = req.body;
   try {
-    const newcar = new CityModal(payload);
+    const newcar =await new CityModal(payload);
     await newcar.save();
     res.send({ msg: "created city details successfully" });
   } catch (err) {
