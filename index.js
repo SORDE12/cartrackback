@@ -33,6 +33,7 @@ app.get("/dashboard", async (req, res) => {
 app.post("/addcity", async (req, res) => {
   
   const payload = req.body;
+  console.log(payload)
   try {
     const newcar =await new CityModal(payload);
     await newcar.save();
