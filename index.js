@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("this is city track backend");
 });
 
-app.use("/addcity", cityRouter);
+app.use("/", cityRouter);
 
 
 app.listen(process.env.port, async () => {

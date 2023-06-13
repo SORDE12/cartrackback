@@ -8,7 +8,7 @@ let citySchema=mongoose.Schema({
     longitude:{type:Number,required:true}
 })
 
-let CityModal=mongoose.model("car",citySchema)
+let CityModal=mongoose.model("cities",citySchema)
 
 module.exports={
     CityModal
